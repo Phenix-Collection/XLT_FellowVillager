@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/business_card_background"
+    >
+
+    <com.xianglin.fellowvillager.app.widget.TopView
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dimen_50_dip"
+        android:background="@color/white"
+        android:id="@+id/rela_album"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/common_padding_large">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_padding_small"
+            android:gravity="center"
+            android:id="@+id/tv_name"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/common_text_size16"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_name"
+            android:layout_alignWithParentIfMissing="true"
+            android:background="@null"
+            android:padding="@dimen/common_padding_small"
+            android:singleLine="true"
+            android:id="@+id/et_name"
+            android:maxLength="30"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/tv_num"
+            android:textColor="@color/app_text_color"
+            android:layout_alignBottom="@+id/et_name"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/common_text_size16"/>
+    </RelativeLayout>
+
+</LinearLayout>

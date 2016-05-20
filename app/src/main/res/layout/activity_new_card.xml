@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/business_card_background"
+    android:orientation="vertical">
+
+    <com.xianglin.fellowvillager.app.widget.TopView
+        android:id="@+id/topview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_new_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_item_selector"
+        android:layout_marginTop="@dimen/common_margin_large"
+        android:layout_marginLeft="@dimen/common_margin_large"
+        android:layout_marginRight="@dimen/common_margin_large"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="@dimen/common_padding_verySmall"
+            android:layout_height="@dimen/dimen_80_dip"
+            android:background="@color/business_card_blue"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/common_margin_large"
+            android:textColor="@color/business_card_blue"
+            android:textSize="@dimen/common_text_size20"
+            android:text="icon"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/common_image_size40"
+            android:textColor="@color/business_card_blue"
+            android:textSize="@dimen/common_text_size24"
+            android:text="名片"
+            />
+
+    </LinearLayout>
+</LinearLayout>

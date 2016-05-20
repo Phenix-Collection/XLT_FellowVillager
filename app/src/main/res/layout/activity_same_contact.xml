@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/business_card_background"
+    android:orientation="vertical">
+
+    <com.xianglin.fellowvillager.app.widget.TopView
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.xianglin.fellowvillager.app.widget.PinnedSectionListView
+        android:id="@+id/contactList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topview"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/c_divider"
+        android:dividerHeight="1px"
+        android:fadingEdgeLength="0dip"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+
+    <com.xianglin.fellowvillager.app.widget.BladeView
+        android:id="@+id/sideBar"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:divider="@color/app_text_color3" />
+
+</RelativeLayout>

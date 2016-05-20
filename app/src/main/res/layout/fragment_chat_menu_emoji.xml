@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/send_emo_bgcolor">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_emoji"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/dimen_16_dip"
+        android:paddingRight="@dimen/dimen_16_dip"
+        android:paddingTop="@dimen/dimen_10_dip"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dimen_11_dip">
+
+        <ImageView
+            android:id="@+id/dot_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dot_dark" />
+
+        <ImageView
+            android:id="@+id/dot_2"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dot_light" />
+
+        <ImageView
+            android:id="@+id/dot_3"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dot_light" />
+
+        <ImageView
+            android:id="@+id/dot_4"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dot_light" />
+
+        <ImageView
+            android:id="@+id/dot_5"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dot_light" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_37_dip"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_16_dip"
+            android:layout_marginStart="@dimen/dimen_16_dip"
+            android:src="@drawable/em_smile_hilite" />
+
+    </RelativeLayout>
+
+</LinearLayout>

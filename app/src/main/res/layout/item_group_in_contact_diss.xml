@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+<LinearLayout
+    android:id="@+id/front"
+    android:tag="front"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_minglu_contact"
+        style="@style/MMListItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_52_dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/setting_item_selector"
+        android:paddingLeft="@dimen/dimen_11_dip">
+
+        <com.xianglin.fellowvillager.app.widget.CircleImage
+            android:layout_width="@dimen/dimen_36_dip"
+            android:layout_height="@dimen/dimen_36_dip"
+            android:src="@drawable/group_icon" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/dimen_36_dip"
+            android:layout_height="@dimen/dimen_36_dip"
+            android:visibility="gone">
+
+            <com.xianglin.fellowvillager.app.widget.CircleImage
+                android:id="@+id/ci_minglu_contact_head1"
+                android:layout_width="@dimen/dimen_18_dip"
+                android:layout_height="@dimen/dimen_18_dip"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/head" />
+
+
+            <com.xianglin.fellowvillager.app.widget.CircleImage
+                android:id="@+id/ci_minglu_contact_head2"
+                android:layout_width="@dimen/dimen_18_dip"
+                android:layout_height="@dimen/dimen_18_dip"
+                android:layout_alignRight="@id/ci_minglu_contact_head1"
+                android:layout_below="@+id/ci_minglu_contact_head1"
+                android:layout_marginRight="@dimen/dimen_9_dip"
+                android:src="@drawable/head" />
+
+            <com.xianglin.fellowvillager.app.widget.CircleImage
+                android:id="@+id/ci_minglu_contact_head3"
+                android:layout_width="@dimen/dimen_18_dip"
+                android:layout_height="@dimen/dimen_18_dip"
+                android:layout_alignLeft="@id/ci_minglu_contact_head1"
+                android:layout_below="@+id/ci_minglu_contact_head1"
+                android:layout_marginLeft="@dimen/dimen_9_dip"
+                android:src="@drawable/head" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <TextView
+                android:id="@+id/tv_minglu_contact_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_text_size16"
+                tools:text="大地母亲在热吻" />
+
+            <com.xianglin.fellowvillager.app.widget.CircleImage
+                android:id="@+id/ci_role_3"
+                android:layout_width="@dimen/dimen_18_dip"
+                android:layout_height="@dimen/dimen_18_dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_23_dip"
+                android:src="@drawable/head" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/app_line" />
+
+</LinearLayout>
+
+
+
+
+    </FrameLayout>

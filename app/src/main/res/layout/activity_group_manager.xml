@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.xianglin.fellowvillager.app.widget.TopView
+        android:id="@+id/topview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.xianglin.fellowvillager.app.widget.GroupManagerGridView
+                android:id="@+id/gv_group_manager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="@dimen/dimen_10_dip"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/product_list_bg_color"/>
+
+            <LinearLayout
+                android:id="@+id/liy_group_member"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:background="@drawable/setting_item_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_group_manager_list"
+                    style="@style/TxtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/login"
+                    android:textSize="@dimen/dimen_14_dip"/>
+
+                <TextView
+                    android:id="@+id/tv_group_member_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/login"
+                    android:textSize="@dimen/dimen_14_dip"
+                    tools:text="@string/group_list_me"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableRight="@drawable/right"
+                    android:gravity="center_vertical|right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+
+                android:background="@color/product_list_bg_color"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_16_dip"/>
+
+            <View
+                android:id="@+id/device_linea"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/product_list_bg_color"/>
+
+            <LinearLayout
+                android:id="@+id/liy_group_name_update"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:background="@drawable/setting_item_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/TxtTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:text="@string/group_name_up"
+                    android:textSize="@dimen/dimen_14_dip"/>
+
+
+                <TextView
+                    android:id="@+id/tv_group_name_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|right"
+                    android:singleLine="true"
+                    android:textColor="@color/product_list_bg_color"
+                    android:textSize="@dimen/dimen_14_dip"
+                    tools:text="@string/group_name_up_value"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:drawableRight="@drawable/right"
+                    android:gravity="center_vertical|right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="15dp"
+                android:background="@color/product_list_bg_color"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_group_change"
+                style="@style/TxtTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:background="@drawable/setting_item_selector"
+                android:clickable="true"
+                android:drawableRight="@drawable/right"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/group_list_ch"
+                android:textColor="@color/login"
+                android:textSize="@dimen/dimen_14_dip"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/product_list_bg_color"/>
+
+            <LinearLayout
+                android:id="@+id/ll_history_record_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/ll_history_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_45_dip"
+                    android:background="@drawable/setting_item_selector"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TxtTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:text="卡片"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="12dp"
+                        android:drawablePadding="12dp"
+                        android:drawableRight="@drawable/right"
+                        android:gravity="center_vertical|right"
+                        android:text="历史记录"
+                        android:textColor="@color/product_list_bg_color"
+                        android:textSize="@dimen/dimen_14_dip"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="@color/product_list_bg_color"/>
+
+                <ScrollView
+                    android:id="@+id/sv_codes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <com.fima.cardsui.views.CardUI
+                            android:id="@+id/cardsview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#FFFFFF"/>
+                    </LinearLayout>
+
+                </ScrollView>
+            </LinearLayout>
+
+            <!--<View
+                android:id="@+id/device_line"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/product_list_bg_color" />-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_85_dip"
+                android:gravity="center"
+                android:padding="@dimen/dimen_18_dip">
+
+                <Button
+                    android:id="@+id/btn_exit_delect"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/delete_button_selector"
+                    android:padding="@dimen/dimen_3_dip"
+                    android:text="@string/group_exit_delect"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_16_dip"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

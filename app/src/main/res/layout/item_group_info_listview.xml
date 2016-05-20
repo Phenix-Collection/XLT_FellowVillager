@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line_height"
+        android:layout_marginLeft="@dimen/common_margin_small"
+        android:background="@color/app_text_color4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_height50">
+
+        <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin_small"
+            android:text="转让群"
+            android:textColor="@color/app_text_color" />
+
+        <TextView
+            android:id="@+id/textView_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_medium"
+            android:layout_toLeftOf="@+id/imgView"
+            android:text=""
+            android:textColor="@color/app_text_color4"
+            android:textSize="@dimen/common_text_size16" />
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_small"
+            android:src="@drawable/right"
+            android:textSize="@dimen/common_text_size16" />
+    </RelativeLayout>
+</LinearLayout>

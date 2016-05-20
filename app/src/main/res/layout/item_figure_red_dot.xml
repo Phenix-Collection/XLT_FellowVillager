@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.xianglin.fellowvillager.app.widget.CircleImage
+        android:id="@+id/figure_img"
+        android:layout_width="@dimen/dimen_33_dip"
+        android:layout_height="@dimen/dimen_33_dip" />
+
+    <ImageView
+        android:id="@+id/red_dot"
+        android:layout_width="@dimen/dimen_7_dip"
+        android:layout_height="@dimen/dimen_7_dip"
+        android:layout_gravity="end|top"
+        android:layout_marginEnd="@dimen/dimen_1_dip"
+        android:layout_marginRight="@dimen/dimen_1_dip"
+        android:layout_marginTop="@dimen/dimen_1_dip"
+        android:src="@drawable/aii"
+        android:visibility="gone"/>
+
+</FrameLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_circle_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40_dip"
+        android:layout_marginLeft="@dimen/common_margin_large"
+        android:layout_marginTop="@dimen/common_margin_small"
+        android:gravity="center_vertical"
+        android:text="发送给"
+        android:textColor="@color/app_text_color3"
+        android:textSize="@dimen/common_text_size17" />
+
+    <LinearLayout
+        android:id="@+id/dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_large"
+        android:layout_marginTop="@dimen/common_margin_large"
+        android:orientation="horizontal">
+
+        <com.xianglin.fellowvillager.app.widget.CircleImage
+            android:id="@+id/dialog_head"
+            android:layout_width="@dimen/common_item_height50"
+            android:layout_height="@dimen/common_item_height50"
+            android:src="@drawable/head"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dialog_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:paddingLeft="10dip"
+                android:text="name"
+                android:textColor="@color/app_text_color2"
+                android:textSize="@dimen/common_text_size18" />
+
+            <TextView
+                android:id="@+id/dialog_xlid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:textColor="@color/app_text_color3"
+                android:textSize="@dimen/common_text_size17" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dimen_300_dip"
+        android:layout_height="@dimen/common_line_height"
+        android:layout_marginTop="@dimen/common_margin_large"
+        android:background="@color/app_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_back"
+            android:layout_width="@dimen/dimen_150_dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_item_selector"
+            android:text="@string/cancel"
+            android:textColor="@color/app_text_color2"
+            android:textSize="@dimen/common_text_size18" />
+
+        <View
+            android:layout_width="@dimen/common_line_width"
+            android:layout_height="match_parent"
+            android:background="@color/app_line" />
+
+        <Button
+            android:id="@+id/dialog_confirm"
+            android:layout_width="@dimen/dimen_150_dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_item_selector_right"
+            android:text="@string/ok"
+            android:textColor="@color/app_green_button_normal"
+            android:textSize="@dimen/common_text_size18" />
+    </LinearLayout>
+</LinearLayout>

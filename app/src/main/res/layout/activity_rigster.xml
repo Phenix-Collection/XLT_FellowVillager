@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/transparent"
+        tools:layout_height="25dp"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_register"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".activity.login.RegisterAcitvity">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="55dp"
+                android:src="@drawable/logo_rigster" />
+
+            <TextView
+                android:id="@+id/tv_tip"
+                style="@style/comm_tip_text_style"
+                android:layout_below="@+id/iv_logo"
+                android:layout_marginTop="40dp"
+                android:text="@string/rigster_acitvity_tip"
+                android:textColor="@color/app_text_color3" />
+
+            <TextView
+                android:id="@+id/tv_refresh"
+                style="@style/comm_tip_text_style"
+                android:layout_below="@+id/ll_xlid"
+                android:text="@string/refresh_rigster_xlid"
+                android:layout_marginTop="@dimen/common_margin_small"
+                android:textColor="@color/app_text_color3" />
+
+            <LinearLayout
+                android:id="@+id/ll_xlid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tip"
+                android:layout_marginTop="11dp"
+                android:layout_marginLeft="@dimen/common_activity_margin"
+                android:layout_marginRight="@dimen/common_activity_margin"
+                android:orientation="vertical"
+                tools:layout_height="200dp">
+
+                <ListView
+                    android:id="@+id/lv_xlid"
+                    style="@style/fill_divider_listview_style"
+                    android:background="@drawable/rigster_listview_bg"
+                    android:padding="0.1dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_button_height"
+                android:layout_below="@+id/tv_refresh"
+                android:layout_marginLeft="@dimen/common_activity_margin"
+                android:layout_marginRight="@dimen/common_activity_margin"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/btn_circle_green"
+                android:text="@string/next"
+                android:textSize="@dimen/common_text_size18"
+                android:textColor="@color/btn_commen_selector" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

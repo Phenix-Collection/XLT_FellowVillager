@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_13_dip"
+        android:paddingLeft="@dimen/common_padding_small"
+        android:textColor="@color/app_green"
+        android:textSize="@dimen/common_text_size16"
+        android:visibility="gone" />
+
+    <com.xianglin.fellowvillager.app.widget.CircleImage
+        android:id="@+id/imageView_head_me"
+        android:layout_width="@dimen/dimen_80_dip"
+        android:layout_height="@dimen/dimen_80_dip"
+        android:layout_marginTop="@dimen/dimen_13_dip" />
+
+    <TextView
+        android:id="@+id/textView_name_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_13_dip"
+        android:drawablePadding="@dimen/common_padding_small"
+        android:maxEms="12"
+        android:paddingLeft="@dimen/common_padding_small"
+        android:singleLine="true"
+        android:text="name"
+        android:textColor="@color/app_text_color"
+        android:textSize="@dimen/common_text_size16" />
+
+    <TextView
+        android:id="@+id/textView_id_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_13_dip"
+        android:layout_marginTop="@dimen/dimen_7_dip"
+        android:textColor="@color/app_text_color3"
+        android:textSize="@dimen/common_text_size15" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin_large"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version:"
+            android:textSize="@dimen/common_text_size20" />
+
+        <TextView
+            android:id="@+id/textView_version_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_text_size20" />
+    </LinearLayout>
+</LinearLayout>

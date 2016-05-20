@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlt_gridview"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <FrameLayout
+        android:id="@+id/item_grid_flt"
+        android:layout_width="@dimen/dimen_55_dip"
+        android:layout_height="@dimen/dimen_55_dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_15_dip">
+
+        <com.xianglin.fellowvillager.app.widget.CircleImage
+            android:id="@+id/item_img_group_manager"
+            android:layout_width="@dimen/dimen_55_dip"
+            android:layout_height="@dimen/dimen_55_dip"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/head"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/item_text_group_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_grid_flt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_5_dip"
+        android:ellipsize="end"
+        android:maxWidth="@dimen/dimen_55_dip"
+        android:singleLine="true"
+        android:text="test1aaa"
+        android:textColor="@color/app_text_color"
+        android:textSize="@dimen/common_text_size12" />
+</RelativeLayout> 

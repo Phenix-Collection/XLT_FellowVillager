@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <com.xianglin.fellowvillager.app.widget.CircleImage
+        android:id="@+id/iv_userhead"
+        android:layout_width="@dimen/size_avatar"
+        android:layout_height="@dimen/size_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/head" />
+
+    <com.xianglin.fellowvillager.app.widget.CircleProgressView
+        android:id="@+id/iv_countdown"
+        android:layout_width="@dimen/dimen_49_dip"
+        android:layout_height="@dimen/dimen_49_dip"
+        android:visibility="visible"
+        android:scaleType="fitXY" />
+</RelativeLayout>

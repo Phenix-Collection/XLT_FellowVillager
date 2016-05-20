@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dimen_161_dip"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_add_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_161_dip"
+        android:layout_marginLeft="@dimen/dimen_5_dip"
+        android:layout_marginRight="@dimen/dimen_5_dip"
+        android:background="@drawable/visiting_code_shape"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_card_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_add_card"/>
+
+        <TextView
+            android:id="@+id/tv_card_descuption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20_dip"
+            android:text="发名片"
+            android:textColor="@color/app_text_color3"
+            android:textSize="@dimen/common_text_size18"/>
+    </LinearLayout>
+
+
+</LinearLayout>

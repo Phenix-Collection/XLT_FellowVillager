@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+          android:id="@+id/front"
+          android:tag="front"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:background="@color/app_line"
+    android:paddingLeft="@dimen/dimen_20_dip"
+    tools:text="我参与的群"
+    android:textSize="@dimen/common_text_size13" />

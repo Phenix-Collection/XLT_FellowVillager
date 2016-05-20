@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_search"
+        layout="@layout/layout_head_search" />
+
+    <LinearLayout
+        android:id="@+id/layout_newContact"
+        style="@style/MMListItem"
+        android:layout_height="@dimen/common_item_height52"
+        android:background="@drawable/setting_item_selector"
+        android:paddingLeft="@dimen/common_padding_medium">
+
+        <ImageView
+            android:layout_width="@dimen/common_image_size36"
+            android:layout_height="@dimen/common_image_size36"
+            android:src="@drawable/raw_yellowpage" />
+
+        <TextView
+            style="@style/MMFontTitleInList"
+            android:layout_marginLeft="@dimen/common_margin_small"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="新联系人"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_margin_small"
+            android:src="@drawable/icon_arrow_right" />
+    </LinearLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/c_divider" />
+
+    <LinearLayout
+        android:id="@+id/layout_group"
+        style="@style/MMListItem"
+        android:layout_height="@dimen/common_item_height52"
+        android:background="@drawable/setting_item_selector"
+        android:paddingLeft="@dimen/common_padding_medium">
+
+        <ImageView
+            android:layout_width="@dimen/common_image_size36"
+            android:layout_height="@dimen/common_image_size36"
+            android:src="@drawable/group_icon" />
+
+        <TextView
+            style="@style/MMFontTitleInList"
+            android:layout_marginLeft="@dimen/common_margin_small"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:singleLine="true"
+            android:text="群聊"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_margin_small"
+            android:src="@drawable/icon_arrow_right" />
+    </LinearLayout>
+</LinearLayout>

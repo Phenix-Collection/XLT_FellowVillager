@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/app_title_bg"
+        tools:layout_height="25dp"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".activity.login.RegisterAcitvity">
+
+        <TextView
+            android:id="@+id/tv_xlid"
+            style="@style/comm_tip_text_style"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/app_text_color3"
+            tools:text="ID:888888" />
+
+        <com.xianglin.fellowvillager.app.widget.CircleImage
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/head_image_height"
+            android:layout_height="@dimen/head_image_height"
+            android:layout_below="@+id/tv_xlid"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/select_head" />
+
+
+        <EditText
+            android:id="@+id/et_user_name"
+            style="@style/commen_edittext_style"
+            android:layout_below="@+id/iv_head"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="31dp"
+            android:hint="@string/set_username_tip"
+            android:maxLength="30" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            style="@style/common_button_extend"
+            android:layout_below="@+id/et_user_name"
+            android:layout_marginTop="21dp"
+            android:textSize="@dimen/common_text_size18"
+            android:text="@string/ok" />
+    </RelativeLayout>
+</LinearLayout>

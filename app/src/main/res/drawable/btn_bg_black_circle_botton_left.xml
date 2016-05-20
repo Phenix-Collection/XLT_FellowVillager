@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 填充颜色 -->
+    <solid android:color="@color/black2" />
+    <!-- 线的宽度，颜色灰色 -->
+    <stroke
+        android:width="0dp"
+        android:color="@color/white" />
+    <!-- 矩形的圆角半径,值越大角越圆 -->
+    <corners
+        android:bottomLeftRadius="0dp"/>
+    <!--android:bottomLeftRadius="@dimen/common_button_radius"-->
+    <!-- 间隔：设置各个方位的间隔 -->
+    <padding
+        android:bottom="@dimen/circle_padding"
+        android:left="@dimen/circle_padding"
+        android:right="@dimen/circle_padding"
+        android:top="@dimen/circle_padding" />
+   
+</shape>

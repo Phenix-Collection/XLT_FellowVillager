@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b3e52"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.xianglin.fellowvillager.app.widget.TopView
+            android:id="@+id/topview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_below="@id/topview"
+            android:background="#223141">
+
+            <TextView
+                android:id="@+id/tv_visiting_code_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/visiting_card_time"
+                android:textSize="@dimen/common_text_size13"/>
+                <!--android:text="2015年12月"-->
+        </FrameLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_13_dip"
+        android:layout_below="@id/rl"/>
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <ListView
+        android:id="@+id/lv_visiting_code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view_line"
+        android:layout_centerInParent="true"
+        android:scrollbars="none"/>
+
+</RelativeLayout>

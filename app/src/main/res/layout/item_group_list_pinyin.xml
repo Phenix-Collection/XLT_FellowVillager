@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:background="#F0EFF5"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dip"
+        android:textColor="@color/app_text_color3"
+        android:textSize="11sp"/>
+
+    <LinearLayout
+        android:id="@+id/chk_item"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:background="@drawable/setting_item_selector"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linelay_check"
+            android:layout_width="@dimen/dimen_14_dip"
+            android:layout_height="@dimen/dimen_14_dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/ckx_member_select"
+                android:layout_width="@dimen/dimen_14_dip"
+                android:layout_height="@dimen/dimen_14_dip"
+                android:layout_gravity="center"
+                android:background="@drawable/group_multiple"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_32_dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.xianglin.fellowvillager.app.widget.CircleImage
+                android:id="@+id/rember_img"
+                android:layout_width="@dimen/dimen_32_dip"
+                android:layout_height="@dimen/dimen_32_dip"
+                android:src="@drawable/head"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/dimen_10_dip"
+            android:paddingTop="@dimen/dimen_10_dip"
+            android:lines="1"
+            android:maxLength="20"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_15_dip"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:paddingRight="20dp"
+            android:orientation="horizontal">
+
+            <com.xianglin.fellowvillager.app.widget.CircleImage
+                android:id="@+id/ci_role_3"
+                android:layout_width="@dimen/dimen_16_dip"
+                android:layout_height="@dimen/dimen_16_dip"
+                android:src="@drawable/head"
+                android:visibility="gone"
+                />
+
+            <com.xianglin.fellowvillager.app.widget.CircleImage
+                android:id="@+id/ci_role_2"
+                android:layout_width="@dimen/dimen_16_dip"
+                android:layout_height="@dimen/dimen_16_dip"
+                android:layout_marginLeft="@dimen/dimen_7_dip"
+                android:src="@drawable/head"
+                android:visibility="gone"
+                />
+
+            <com.xianglin.fellowvillager.app.widget.CircleImage
+                android:id="@+id/ci_role_1"
+                android:layout_width="@dimen/dimen_16_dip"
+                android:layout_height="@dimen/dimen_16_dip"
+                android:layout_marginLeft="@dimen/dimen_7_dip"
+                android:src="@drawable/more"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>    <!--android:background="@drawable/group_multiple"-->

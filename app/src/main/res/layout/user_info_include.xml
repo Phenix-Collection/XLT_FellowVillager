@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_86_dip"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <com.xianglin.fellowvillager.app.widget.CircleImage
+            android:id="@+id/iv_person_header"
+            android:layout_width="@dimen/dimen_56_dip"
+            android:layout_height="@dimen/dimen_56_dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/head" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_person_name"
+                style="@style/common_content_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/common_padding_verySmall"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxWidth="@dimen/dimen_150_dip"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_person_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/app_text_color3"
+                android:textSize="@dimen/common_text_size12" />
+
+            <TextView
+                android:id="@+id/tv_person_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxWidth="@dimen/dimen_150_dip"
+                android:singleLine="true"
+                android:textColor="@color/app_text_color3"
+                android:textSize="@dimen/common_text_size12" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

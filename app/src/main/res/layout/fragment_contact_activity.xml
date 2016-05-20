@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentFirstPage">
+
+
+
+    <com.xianglin.fellowvillager.app.widget.FragmentContactListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@drawable/xml_list_divider"
+        android:dividerHeight="1px"
+        android:listSelector="@color/transparent"
+        sp:right_width="@dimen/dimen_89_dip" />
+
+    <include layout="@layout/view_nochar_tip" />
+    <include
+        android:id="@+id/rl_error_item"
+        layout="@layout/layout_net_none" />
+
+</RelativeLayout>

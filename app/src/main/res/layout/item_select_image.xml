@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/rl_photo_lpsi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_h_4"
+        android:layout_marginLeft="@dimen/dimen_3_dip"
+        android:layout_marginRight="@dimen/dimen_3_dip"
+        android:layout_marginTop="@dimen/dimen_h_4"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_photo_lpsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_img_descuption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20_dip"
+            android:text="拍摄照片"
+            android:textColor="@color/app_text_color3"
+            android:textSize="@dimen/common_text_size18"/>
+    </LinearLayout>
+
+
+</LinearLayout>

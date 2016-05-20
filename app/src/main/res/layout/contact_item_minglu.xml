@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_minglu_contact"
+        style="@style/MMListItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_height52"
+        android:background="@drawable/setting_item_selector"
+        android:paddingLeft="@dimen/common_padding_medium">
+
+        <com.xianglin.fellowvillager.app.widget.CircleImage
+            android:id="@+id/ci_minglu_contact_head"
+            android:layout_width="@dimen/common_image_size36"
+            android:layout_height="@dimen/common_image_size36"
+            android:src="@drawable/head"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="@dimen/dimen_11_dip">
+
+            <TextView
+                android:id="@+id/tv_minglu_contact_nick"
+                style="@style/MMFontTitleInList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:maxEms="12"
+                android:ellipsize="end"
+                android:text="大地母亲在热吻"/>
+
+            <ImageView
+                android:id="@+id/iv_minglu_contact_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_16_dip"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"/>
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_23_dip"
+                android:layout_centerVertical="true"
+                layout="@layout/circleimage_role"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/app_line"/>
+
+</LinearLayout>

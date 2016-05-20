@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <com.xianglin.fellowvillager.app.widget.CircleImage
+        android:id="@+id/ci_role_3"
+        android:layout_width="@dimen/dimen_18_dip"
+        android:layout_height="@dimen/dimen_18_dip"
+        android:src="@drawable/head"
+        android:visibility="gone"
+      />
+
+    <com.xianglin.fellowvillager.app.widget.CircleImage
+        android:id="@+id/ci_role_2"
+        android:layout_width="@dimen/dimen_18_dip"
+        android:layout_height="@dimen/dimen_18_dip"
+        android:layout_marginLeft="@dimen/dimen_7_dip"
+        android:src="@drawable/head"
+        android:visibility="gone"
+        />
+
+    <com.xianglin.fellowvillager.app.widget.CircleImage
+        android:id="@+id/ci_role_1"
+        android:layout_width="@dimen/dimen_18_dip"
+        android:layout_height="@dimen/dimen_18_dip"
+        android:layout_marginLeft="@dimen/dimen_7_dip"
+        android:src="@drawable/head"
+        android:visibility="gone"
+       />
+
+</LinearLayout>

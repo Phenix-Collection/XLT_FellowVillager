@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_59_dip"
+    android:background="@drawable/setting_item_selector"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/item_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/iv_rl"
+            android:layout_width="@dimen/dimen_63_dip"
+            android:layout_height="@dimen/dimen_59_dip"
+            android:paddingBottom="@dimen/dimen_5_dip"
+            android:paddingLeft="@dimen/dimen_5_dip"
+            android:paddingRight="@dimen/dimen_5_dip"
+            android:paddingTop="@dimen/dimen_5_dip">
+
+            <com.xianglin.fellowvillager.app.widget.CircleImage
+                android:id="@+id/iv_icon"
+                android:layout_width="@dimen/dimen_45_dip"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:layout_centerInParent="true"
+                android:src="@drawable/head" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_59_dip"
+            android:layout_toRightOf="@id/iv_rl"
+            android:paddingBottom="@dimen/dimen_12_dip"
+            android:paddingRight="@dimen/dimen_9_dip"
+            android:paddingTop="@dimen/dimen_10_dip">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:maxWidth="200dp"
+                android:singleLine="true"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/dimen_14_dip" />
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_title"
+                android:layout_alignParentBottom="true"
+                android:ellipsize="end"
+                android:maxEms="16"
+                android:singleLine="true"
+                android:text="message"
+                android:textColor="@color/app_text_color3"
+                android:textSize="@dimen/dimen_12_dip" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/app_text_color4"
+                android:textSize="@dimen/dimen_12_dip" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/tv_time">
+
+                <TextView
+                    android:id="@+id/unread_msg_number"
+                    android:layout_width="@dimen/dimen_15_dip"
+                    android:layout_height="@dimen/dimen_15_dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/dimen_2_dip"
+                    android:background="@drawable/aii"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+
+                <com.xianglin.fellowvillager.app.widget.CircleImage
+                    android:id="@+id/iv_figure_icon"
+                    android:layout_width="@dimen/dimen_15_dip"
+                    android:layout_height="@dimen/dimen_15_dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/unread_msg_number"
+                    android:src="@drawable/head"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/red_del">
+
+        <TextView
+            android:id="@+id/item_right_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="@color/blur_bg" />
+    </RelativeLayout>
+</LinearLayout>

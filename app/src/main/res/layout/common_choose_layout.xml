@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_choose_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/cancel_text"
+            style="@style/common_title_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/common_choose_layout_item_height"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/setting_item_selector"
+            android:gravity="center"
+            android:text="@string/cancel"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:layout_above="@+id/cancel_text"
+            android:background="@color/app_line"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/cancel_text"
+            android:layout_marginBottom="1dp">
+
+            <ListView
+                android:id="@+id/lv_menu"
+                style="@style/common_fill_listview_style"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

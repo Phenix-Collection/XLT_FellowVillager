@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1"
+    tools:context=".activity.group.GroupSetNameActivity">
+
+    <com.xianglin.fellowvillager.app.widget.TopView
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topview"
+        android:paddingBottom="@dimen/common_margin_small"
+        android:paddingLeft="@dimen/common_margin_medium"
+        android:paddingTop="@dimen/common_margin_medium"
+        android:text="@string/tip_set_group_name"
+        android:textColor="@color/app_text_color3"
+        android:textSize="@dimen/common_text_size14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+
+        >
+
+        <EditText
+            android:id="@+id/et_group_name"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:maxLength="15"
+            android:paddingBottom="@dimen/common_margin_small"
+            android:paddingLeft="@dimen/common_margin_medium"
+            android:paddingTop="@dimen/common_margin_small"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/common_text_size16"
+            tools:text="电商先遣队" />
+
+        <ImageView
+            android:id="@+id/iv_clearBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tip"
+            android:layout_gravity="center|right"
+            android:background="@null"
+            android:clickable="true"
+            android:padding="@dimen/common_margin_small"
+            android:scaleType="center"
+            android:src="@drawable/close"
+
+
+            />
+    </LinearLayout>
+</RelativeLayout>

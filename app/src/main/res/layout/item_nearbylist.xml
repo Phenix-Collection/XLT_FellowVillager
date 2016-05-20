@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_50_dip"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/common_activity_margin"
+    android:paddingRight="@dimen/common_activity_margin">
+
+    <com.xianglin.fellowvillager.app.widget.CircleImage
+        android:id="@+id/iv_head_nearby"
+        android:layout_width="@dimen/dimen_36_dip"
+        android:layout_height="@dimen/dimen_36_dip"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/head" />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        style="@style/common_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/common_activity_margin" />
+</LinearLayout>

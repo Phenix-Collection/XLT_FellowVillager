@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_text_color4"
+    android:orientation="vertical">
+
+    <com.xianglin.fellowvillager.app.widget.TopView
+        android:id="@+id/topview_group_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_text_color4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_text_color4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.xianglin.fellowvillager.app.widget.GroupGridView
+                    android:id="@+id/gview_group_infor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_margin_small"
+                    android:layout_marginRight="@dimen/common_margin_small"
+                    android:layout_marginTop="@dimen/common_margin_small"
+                    android:columnWidth="@dimen/common_item_height50"
+                    android:horizontalSpacing="@dimen/common_padding_medium"
+                    android:numColumns="5"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="@dimen/common_padding_medium"></com.xianglin.fellowvillager.app.widget.GroupGridView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_line_height"
+                    android:layout_marginLeft="@dimen/common_margin_small"
+                    android:layout_marginTop="@dimen/common_margin_small"
+                    android:background="@color/app_text_color4" />
+
+                <RelativeLayout
+                    android:id="@+id/all_menbers_group_infor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_item_height50">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/common_margin_small"
+                        android:text="全部群成员"
+                        android:textColor="@color/app_text_color" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/common_margin_small"
+
+                        android:src="@drawable/right" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listview_group_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin_large"
+                android:background="@color/white">
+
+            </ListView>
+
+            <Button
+                android:id="@+id/btn_delete_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/common_margin_large"
+                android:layout_marginLeft="@dimen/common_margin_medium"
+                android:layout_marginRight="@dimen/common_margin_medium"
+                android:layout_marginTop="@dimen/common_margin_large"
+                android:background="@color/red"
+                android:gravity="center"
+                android:text="退出并删除本群"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

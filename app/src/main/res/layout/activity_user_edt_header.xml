@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/business_card_background"
+    >
+
+    <com.xianglin.fellowvillager.app.widget.TopView
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_200_dip"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <com.xianglin.fellowvillager.app.widget.CircleImage
+            android:id="@+id/iv_header"
+            android:layout_width="@dimen/dimen_125_dip"
+            android:layout_height="@dimen/dimen_125_dip"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/head"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:background="@color/white"
+        android:id="@+id/rela_album"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_padding_small"
+            android:gravity="center"
+            android:text="@string/str_sec_album"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/common_text_size16"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_16_dip"
+            android:src="@drawable/right"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:background="@color/white"
+        android:id="@+id/rela_camera"
+        android:layout_marginTop="1dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_padding_small"
+            android:gravity="center"
+            android:text="@string/str_sec_camera"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/common_text_size16"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_16_dip"
+            android:src="@drawable/right"/>
+    </RelativeLayout>
+</LinearLayout>

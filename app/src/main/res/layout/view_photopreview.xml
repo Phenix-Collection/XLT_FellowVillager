@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+    <ProgressBar
+        android:id="@+id/pb_loading_vpp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@anim/pb_default" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/iv_content_vpp"
+        fresco:actualImageScaleType="fitCenter"/>
+    <!-- <com.polites.GestureImageView
+        android:id="@+id/iv_content_vpp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        gesture-image:max-scale="10.0"
+        gesture-image:min-scale="0.75" /> -->
+
+</FrameLayout>

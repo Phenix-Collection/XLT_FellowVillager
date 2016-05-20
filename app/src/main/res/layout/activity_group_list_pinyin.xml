@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bgcolor"
+    android:orientation="vertical">
+
+
+    <com.xianglin.fellowvillager.app.widget.TopView
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/country_lvcountry"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:cacheColorHint="@color/main_bgcolor"
+            android:scrollbars="none"
+            android:dividerHeight="1px" />
+
+        <TextView
+            android:id="@+id/title_layout_no_friends"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="right|top"
+            android:background="#E0E0E0"
+            android:gravity="center_vertical"
+            android:text="没有匹配的联系人"
+            android:textColor="#454545"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:background="#F0EFF5"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_layout_catalog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/app_text_color3"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="@dimen/dimen_60_dip"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:layout_gravity="center"
+            android:layout_marginBottom="45dp"
+            android:background="@color/app_title_bg"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <com.xianglin.fellowvillager.app.widget.PinyinSideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="20.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginBottom="@dimen/dimen_80_dip"
+            android:layout_marginTop="@dimen/dimen_65_dip" />
+        <LinearLayout
+            android:id="@+id/ll_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/common_padding_large"
+            android:paddingRight="@dimen/common_padding_large"
+            android:paddingLeft="@dimen/common_padding_large"
+            android:paddingBottom="@dimen/dimen_49_dip"
+            android:layout_gravity="bottom|right"
+            android:visibility="gone"
+            >
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/contact_plus_icon"
+            android:id="@+id/contact_plus"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/common_padding_verySmall"
+            android:alpha="40"
+            />
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/contact_minus_icon"
+            android:id="@+id/contact_minus"
+            android:layout_marginTop="@dimen/common_padding_verySmall"
+            android:alpha="40"
+            />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

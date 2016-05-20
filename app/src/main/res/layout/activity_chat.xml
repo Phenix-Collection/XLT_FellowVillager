@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bgcolor"
+    android:fitsSystemWindows="true">
+
+    <com.xianglin.fellowvillager.app.widget.TopView
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:topview_isAdjustResize="true" />
+
+    <!--底部布局-->
+    <LinearLayout
+        android:id="@+id/bar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <!--分割线-->
+        <View
+            android:id="@+id/chat_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dimen_12_dip"
+            android:layout_marginRight="@dimen/dimen_12_dip"
+            android:background="@color/c_divider" />
+
+
+        <!--输入框布局-->
+        <RelativeLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_12_dip"
+            android:paddingRight="@dimen/dimen_12_dip">
+
+
+            <Button
+                android:id="@+id/iv_chat_pvi"
+                android:layout_width="@dimen/dimen_25_dip"
+                android:layout_height="@dimen/dimen_27_dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/chat_pri_icon"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <com.xianglin.fellowvillager.app.chat.widget.PasteEditText
+                android:id="@+id/et_sendmessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/tip_send"
+                android:maxLength="250"
+                android:maxLines="4"
+                android:layout_toRightOf="@id/iv_chat_pvi"
+                android:minHeight="@dimen/dimen_35_dip"
+                android:paddingLeft="@dimen/dimen_5_dip"
+                android:paddingRight="@dimen/dimen_50_dip"
+                android:textSize="14sp" />
+
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="50dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/chat_send_btn_selector"
+                android:text="@string/button_send"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <!--图片,语音,表,卡片,菜单布局-->
+        <LinearLayout
+            android:id="@+id/ll_bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/app_bgcolor"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_5_dip"
+            android:paddingRight="@dimen/dimen_5_dip">
+
+
+            <ImageView
+                android:id="@+id/iv_pic_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/dimen_10_dip"
+                android:src="@drawable/chat_pic_def" />
+
+            <ImageView
+                android:id="@+id/iv_voice_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/dimen_9_dip"
+                android:src="@drawable/chat_voice_def" />
+
+            <ImageView
+                android:id="@+id/iv_face_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/dimen_9_dip"
+                android:src="@drawable/chat_face_def" />
+
+            <ImageView
+                android:id="@+id/iv_card_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/dimen_10_dip"
+                android:src="@drawable/chat_card_def" />
+
+
+        </LinearLayout>
+
+        <!--图片,语音,表情,卡片底部内容布局-->
+        <LinearLayout
+            android:id="@+id/ll_menu_container"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:orientation="vertical"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <com.xianglin.fellowvillager.app.widget.XListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bar_bottom"
+        android:layout_below="@id/top_bar"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="#00000000"
+        android:paddingLeft="@dimen/dimen_11_dip"
+        android:paddingRight="@dimen/dimen_11_dip"
+        android:scrollbars="none"
+        android:smoothScrollbar="true"
+        android:transcriptMode="normal" />
+
+    <LinearLayout
+        android:id="@+id/ll_unRead"
+        android:layout_width="@dimen/dimen_50_dip"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:layout_above="@id/bar_bottom"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_unRead"
+            android:layout_width="@dimen/dimen_30_dip"
+            android:layout_height="@dimen/dimen_33_dip"
+            android:background="@drawable/chat_remind_bg"
+            android:gravity="center"
+            android:text="20"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/mask_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="312dp"
+        android:background="@color/app_mask_color"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/net_none"
+        layout="@layout/layout_net_none"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/top_bar" />
+
+
+</RelativeLayout>

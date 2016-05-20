@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/business_card_background"
+    >
+
+    <com.xianglin.fellowvillager.app.widget.TopView
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:background="@color/white"
+        android:id="@+id/rela_help"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/common_padding_large">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_padding_small"
+            android:gravity="left|center_vertical"
+            android:text="@string/str_help_suggest"
+            android:textColor="@color/app_text_color"
+            android:drawableRight="@drawable/icon_arrow_right"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:textSize="@dimen/common_text_size16"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:background="@color/white"
+        android:id="@+id/rela_aboutus"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_padding_small"
+            android:gravity="left|center_vertical"
+            android:text="@string/str_aboutus"
+            android:textColor="@color/app_text_color"
+            android:drawableRight="@drawable/icon_arrow_right"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:textSize="@dimen/common_text_size16"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:background="@color/white"
+        android:id="@+id/ll_blacklist"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_padding_small"
+            android:gravity="left|center_vertical"
+            android:text="@string/str_blacklist"
+            android:textColor="@color/app_text_color"
+            android:drawableRight="@drawable/icon_arrow_right"
+            android:layout_marginRight="@dimen/common_padding_small"
+            android:textSize="@dimen/common_text_size16"/>
+    </LinearLayout>
+
+</LinearLayout>

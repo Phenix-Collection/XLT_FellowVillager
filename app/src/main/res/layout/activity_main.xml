@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xianglin.fellowvillager.app.widget.TopView
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divide_line"
+        android:layout_below="@id/topview"
+        android:background="@color/windows_color" />
+
+    <com.xianglin.fellowvillager.app.widget.tab.MyFragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_49_dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp" />
+
+    <View
+        android:id="@+id/divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_line_height"
+        android:layout_above="@android:id/tabhost"
+        android:background="@color/app_line" />
+
+
+    <com.xianglin.fellowvillager.app.widget.CircleImage
+        android:id="@+id/figureBtn"
+        android:layout_width="@dimen/dimen_54_dip"
+        android:layout_height="@dimen/dimen_54_dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_6_dip" />
+
+    <ImageView
+        android:id="@+id/red_dot"
+        android:layout_width="@dimen/dimen_9_dip"
+        android:layout_height="@dimen/dimen_9_dip"
+        android:layout_alignEnd="@id/figureBtn"
+        android:layout_alignRight="@id/figureBtn"
+        android:layout_alignTop="@id/figureBtn"
+        android:layout_marginEnd="@dimen/dimen_3_dip"
+        android:layout_marginRight="@dimen/dimen_3_dip"
+        android:layout_marginTop="@dimen/dimen_3_dip"
+        android:src="@drawable/aii"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
+
+
+
